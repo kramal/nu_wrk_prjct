@@ -2,10 +2,22 @@
 @import "./../node_modules/bootstrap/scss/variables";
 /* -------begin customization-------- */
 /* change the primary theme color to red */
+$_arms_nav_color: rgb(65,101,179);
+$_arms_nav_dropdown_bg_color: rgb(255,255,255);
+$_arms_nav_dropdown_txt_color: rgb(65,101,179);
+$_arms_nav_dropdown_border_color: rgb(65,101,179, 0.4);
+
 $theme-colors: (
-        primary: red,
-        acmr: rgb(65,101,179)
+        /* armc site main color*/
+        arms: $_arms_nav_color
 );
+
+$navbar-brand-height: $navbar-brand-font-size * $line-height-base * 3;
+$dropdown-bg: $_arms_nav_dropdown_bg_color;
+$dropdown-color: $_arms_nav_dropdown_txt_color;
+$dropdown-link-color: $_arms_nav_dropdown_txt_color;
+$dropdown-border-color: $_arms_nav_dropdown_border_color;
+
 /* -------end customization-------- */
 /* finally, import Bootstrap to set the changes! */
 @import "./../node_modules/bootstrap/scss/bootstrap";

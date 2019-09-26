@@ -3,206 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="./scss/output.css">
+    <link rel="stylesheet" href="./scss/custom.css">
+    <link rel="stylesheet" href="./css/arms.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
 </head>
 <body>
-<h1>Hello, world!</h1>
-<main class="container">
-    <div class="row py-2">
-        <div class="col-12">
-            <h4 class="pt-3 mb-0">
-                Bootstrap 4 SASS - add new "purple" theme color
-            </h4>
-        </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-arms">
+    <a class="navbar-brand" href="#">ARMS Labs</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto bg-arms">
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="research_areas_dropdown" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Research Areas <span class="sr-only">(current)</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="research_areas_dropdown">
+                    <a class="dropdown-item" href="#">Area 1</a>
+                    <a class="dropdown-item" href="#">Area 2</a>
+                    <a class="dropdown-item" href="#">Area 3</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Publications</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">People</a>
+            </li>
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="academic_program_dropdown" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Academic Programs
+                </a>
+                <div class="dropdown-menu" aria-labelledby="academic_program_dropdown">
+                    <a class="dropdown-item" href="#">Research one </a>
+                    <a class="dropdown-item" href="#">Research two</a>
+                    <a class="dropdown-item" href="#">Research three</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Facilities and Equipment</a>
+            </li>
+
+        </ul>
     </div>
-    <section id="navs" class="py-3">
-        <div class="row">
-            <div class="col-xl-9 pb-4">
-                <nav class="navbar navbar-expand-md navbar-dark bg-primary mb-2">
-                    <a class="navbar-brand" href="#">Primary</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarColor02">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" title="Current breakpoint tier">
-                                    Tier
-                                    <span class="d-xl-inline d-none">XL</span>
-                                    <span class="d-lg-inline d-xl-none d-none">LG</span>
-                                    <span class="d-md-inline d-lg-none d-none">MD</span>
-                                    <span class="d-sm-inline d-md-none d-none">SM</span>
-                                    <span class="d-inline d-sm-none">XS</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <nav class="navbar navbar-expand-md navbar-dark bg-purple mb-3">
-                    <a class="navbar-brand" href="#">Purple</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarColor03">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+</nav>
+<section class="carousel">
+    <div
+            id="mainPageCarousel"
+            class="carousel slide"
+            data-ride="carousel"
+    >
+        <ol class="carousel-indicators">
+            <li
+                    data-target="#mainPageCarousel"
+                    data-slide-to="0"
+                    class="active"
+            ></li>
+            <li data-target="#mainPageCarousel" data-slide-to="1"></li>
+            <li data-target="#mainPageCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <!-- Slide One -->
+            <div
+                    class="carousel-item active "
+                    style="background-image:  url('./img/1.jpg')"
+            >
+                <div class="carousel-caption d-none d-md-block rounded-circle  ">
+                    <h2 class="display-4">News One</h2>
+                    <p class="lead">
+                        General Secretary of ITU Haolin Zhao Visited Robotics and AI Laboratories..
+                    </p>
+                </div>
             </div>
-            <div class="col-xl-3 pb-4">
-                <ul class="nav nav-pills flex-column mb-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-title="Primary color" data-content="Links and 'active' elements always use the primary color.">Active</a>
-                    </li>
-                    <li class="nav-item bg-acmr">
-                        <a class="nav-link text-acmr" href="#">Purple text 22</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                </ul>
+            <!-- Slide Two -->
+            <div
+                    class="carousel-item"
+                    style="background-image: url('./img/2.jpg')"
+            >
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4">News Two</h2>
+                    <p class="lead">
+                        ISSAI Announced at the NU Digital Day.
+                    </p>
+                </div>
+            </div>
+            <!-- Slide Three -->
+            <div
+                    class="carousel-item"
+                    style="background-image:  url('./img/3.jpg')"
+            >
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4">News Three</h2>
+                    <p class="lead">
+                        A Paper Base on Synthetic Dataset and
+                        Deep Learning Got Published on
+                        MDPI Machine Learning and Knowledge Extraction Journal.
+                    </p>
+                </div>
+            </div>
+            <!-- Slide Four -->
+            <div
+                    class="carousel-item"
+                    style="background-image:  url('./img/3.jpg')"
+            >
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4">News Four</h2>
+                    <p class="lead">
+                        General Secretary of ITU Haolin Zhao Visited Robotics and AI Laboratories.
+                    </p>
+                </div>
             </div>
         </div>
-    </section>
+        <a
+                class="carousel-control-prev"
+                href="#mainPageCarousel"
+                role="button"
+                data-slide="prev"
+        >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a
+                class="carousel-control-next"
+                href="#mainPageCarousel"
+                role="button"
+                data-slide="next"
+        >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
 
-    <section class="py-4 mt-2">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Cards</h2>
-                <div class="row py-3">
-                    <div class="col-lg-4 col-sm-6 py-3">
-                        <div class="card border-purple h-100">
-                            <div class="card-img-top"><img src="//placehold.it/600x300" alt="card image 1" class="grayscale img-fluid mx-auto d-block"></div>
-                            <div class="card-body d-flex flex-column">
-                                <p class="text-justify">Ovi lipsim diro? Wi, wi, garius azdipiscing elit. Duis pha codeply.</p> <a href="" data-target="#profileModal" data-toggle="modal" data-caption="Tammy" data-image="//placehold.it/600x300" class="btn btn-secondary btn-lg btn-block text-truncate mt-auto">View Profile</a></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 py-3">
-                        <div class="card bg-purple text-white h-100">
-                            <div class="card-body d-flex flex-column">
-                                <p class="text-justify">Purple card.</p>
-                                <p>Next level irony ennui twee squid fap selvage. Meggings
-                                    flannel Brooklyn literally small batch, mumblecore PBR try-hard kale chips. Brooklyn vinyl lumbersexual bicycle rights, viral
-                                    fap cronut leggings squid chillwave pickled gentrify mustache. 3 wolf moon hashtag church-key Odd Future. Austin messenger bag normcore,
-                                    Helvetica Williamsburg sartorial tote bag distillery Portland before they sold out gastropub taxidermy Vice.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mx-auto py-3">
-                        <div class="card card-default h-100">
-                            <div class="card-img-top"><img src="//placehold.it/600x300" alt="card image 3" class="grayscale img-fluid mx-auto d-block"></div>
-                            <div class="card-body d-flex flex-column">
-                                <p class="text-justify">Varius azdipiscing elit. Duis pharetra, ovi lipsim diro?</p> <a href="" data-target="#profileModal" data-toggle="modal" data-caption="Carry" data-image="//placehold.it/600x300" class="btn btn-secondary btn-lg btn-block text-truncate mt-auto">View Profile</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <span id="alerts" class="anchor"></span>
-    <section class="py-4 mt-2">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Alerts &amp; Notifications</h2>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div role="alert" class="alert alert-purple">
-                            <h4 class="alert-heading">Yes!</h4> Purple alert! yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. Imagine the content here.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-4 mt-2 vh-100">
-        <div class="row h-100 align-items-center">
-            <div class="col-12">
-                <h2>Buttons</h2>
-                <div class="row py-2">
-                    <div class="col-lg col-4">
-                        <button class="btn btn-outline-primary mr-1">Primary</button>
-                    </div>
-                    <div class="col-lg col-4">
-                        <button class="btn btn-outline-purple mr-1">Purple</button>
-                    </div>
-                    <div class="col-lg col-4">
-                        <button class="btn btn-outline-secondary mr-1">Secondary</button>
-                    </div>
-                    <div class="col-lg col-4">
-                        <button class="btn btn-outline-info mr-1">Info</button>
-                    </div>
-                    <div class="col-lg col-4">
-                        <button class="btn btn-outline-danger mr-1">Danger</button>
-                    </div>
-                    <div class="col-lg col-4">
-                        <button class="btn btn-outline-success mr-1">Success</button>
-                    </div>
-                    <div class="col-lg col-4">
-                        <button class="btn btn-outline-warning mr-1">Warning</button>
-                    </div>
-                </div>
-                <div class="row py-2">
-                    <div class="col-md col-4">
-                        <button class="btn btn-primary mr-1">Primary</button>
-                    </div>
-                    <div class="col-lg col-4">
-                        <button class="btn btn-purple mr-1">Purple</button>
-                    </div>
-                    <div class="col-md col-4">
-                        <button class="btn btn-secondary mr-1">Secondary</button>
-                    </div>
-                    <div class="col-md col-4">
-                        <button class="btn btn-info mr-1">Info</button>
-                    </div>
-                    <div class="col-md col-4">
-                        <button class="btn btn-danger mr-1">Danger <span class="badge badge-light badge-pill">!</span></button>
-                    </div>
-                    <div class="col-md col-4">
-                        <button class="btn btn-success mr-1">Success</button>
-                    </div>
-                    <div class="col-md col-4">
-                        <button class="btn btn-warning mr-1">Warning</button>
-                    </div>
-                </div>
-                <div class="row py-2">
-                    <div class="col-md-auto col-4">
-                        <button class="btn btn-sm btn-primary mr-1">Primary</button>
-                    </div>
-                    <div class="col-md-auto col-4">
-                        <button class="btn btn-sm btn-secondary mr-1">Secondary</button>
-                    </div>
-                    <div class="col-md-auto col-4">
-                        <button class="btn btn-sm btn-info mr-1">Info</button>
-                    </div>
-                    <div class="col-md-auto col-4">
-                        <button class="btn btn-sm btn-danger mr-1">Danger</button>
-                    </div>
-                    <div class="col-md-auto col-4">
-                        <button class="btn btn-sm btn-success mr-1">Success</button>
-                    </div>
-                    <div class="col-md-auto col-4">
-                        <button class="btn btn-sm btn-warning mr-1">Warning</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="latest-publications">
+    <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
+    </div>
+</section>
 
-    <hr>
-    <a href="http://whootstrap.themes.guide/" target="ext">Create a custom Bootstrap 4 theme</a>, and test with this page.
-    <input class="form-control w-50" value="https://themestr.app/">
-    <br>
-</main>
+<section class="">
+    <p>Explore ARMS Research</p>
+</section>
+
+<footer class="footer">
+
+</footer>
 
 </body>
 </html>

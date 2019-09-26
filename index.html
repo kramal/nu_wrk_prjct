@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./scss/output.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+<h1>Hello, world!</h1>
+<main class="container">
+    <div class="row py-2">
+        <div class="col-12">
+            <h4 class="pt-3 mb-0">
+                Bootstrap 4 SASS - add new "purple" theme color
+            </h4>
+        </div>
+    </div>
+    <section id="navs" class="py-3">
+        <div class="row">
+            <div class="col-xl-9 pb-4">
+                <nav class="navbar navbar-expand-md navbar-dark bg-primary mb-2">
+                    <a class="navbar-brand" href="#">Primary</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarColor02">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" title="Current breakpoint tier">
+                                    Tier
+                                    <span class="d-xl-inline d-none">XL</span>
+                                    <span class="d-lg-inline d-xl-none d-none">LG</span>
+                                    <span class="d-md-inline d-lg-none d-none">MD</span>
+                                    <span class="d-sm-inline d-md-none d-none">SM</span>
+                                    <span class="d-inline d-sm-none">XS</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <nav class="navbar navbar-expand-md navbar-dark bg-purple mb-3">
+                    <a class="navbar-brand" href="#">Purple</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarColor03">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-xl-3 pb-4">
+                <ul class="nav nav-pills flex-column mb-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-title="Primary color" data-content="Links and 'active' elements always use the primary color.">Active</a>
+                    </li>
+                    <li class="nav-item bg-acmr">
+                        <a class="nav-link text-acmr" href="#">Purple text 22</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4 mt-2">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Cards</h2>
+                <div class="row py-3">
+                    <div class="col-lg-4 col-sm-6 py-3">
+                        <div class="card border-purple h-100">
+                            <div class="card-img-top"><img src="//placehold.it/600x300" alt="card image 1" class="grayscale img-fluid mx-auto d-block"></div>
+                            <div class="card-body d-flex flex-column">
+                                <p class="text-justify">Ovi lipsim diro? Wi, wi, garius azdipiscing elit. Duis pha codeply.</p> <a href="" data-target="#profileModal" data-toggle="modal" data-caption="Tammy" data-image="//placehold.it/600x300" class="btn btn-secondary btn-lg btn-block text-truncate mt-auto">View Profile</a></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 py-3">
+                        <div class="card bg-purple text-white h-100">
+                            <div class="card-body d-flex flex-column">
+                                <p class="text-justify">Purple card.</p>
+                                <p>Next level irony ennui twee squid fap selvage. Meggings
+                                    flannel Brooklyn literally small batch, mumblecore PBR try-hard kale chips. Brooklyn vinyl lumbersexual bicycle rights, viral
+                                    fap cronut leggings squid chillwave pickled gentrify mustache. 3 wolf moon hashtag church-key Odd Future. Austin messenger bag normcore,
+                                    Helvetica Williamsburg sartorial tote bag distillery Portland before they sold out gastropub taxidermy Vice.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mx-auto py-3">
+                        <div class="card card-default h-100">
+                            <div class="card-img-top"><img src="//placehold.it/600x300" alt="card image 3" class="grayscale img-fluid mx-auto d-block"></div>
+                            <div class="card-body d-flex flex-column">
+                                <p class="text-justify">Varius azdipiscing elit. Duis pharetra, ovi lipsim diro?</p> <a href="" data-target="#profileModal" data-toggle="modal" data-caption="Carry" data-image="//placehold.it/600x300" class="btn btn-secondary btn-lg btn-block text-truncate mt-auto">View Profile</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <span id="alerts" class="anchor"></span>
+    <section class="py-4 mt-2">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Alerts &amp; Notifications</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div role="alert" class="alert alert-purple">
+                            <h4 class="alert-heading">Yes!</h4> Purple alert! yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content. Imagine the content here.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-4 mt-2 vh-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <h2>Buttons</h2>
+                <div class="row py-2">
+                    <div class="col-lg col-4">
+                        <button class="btn btn-outline-primary mr-1">Primary</button>
+                    </div>
+                    <div class="col-lg col-4">
+                        <button class="btn btn-outline-purple mr-1">Purple</button>
+                    </div>
+                    <div class="col-lg col-4">
+                        <button class="btn btn-outline-secondary mr-1">Secondary</button>
+                    </div>
+                    <div class="col-lg col-4">
+                        <button class="btn btn-outline-info mr-1">Info</button>
+                    </div>
+                    <div class="col-lg col-4">
+                        <button class="btn btn-outline-danger mr-1">Danger</button>
+                    </div>
+                    <div class="col-lg col-4">
+                        <button class="btn btn-outline-success mr-1">Success</button>
+                    </div>
+                    <div class="col-lg col-4">
+                        <button class="btn btn-outline-warning mr-1">Warning</button>
+                    </div>
+                </div>
+                <div class="row py-2">
+                    <div class="col-md col-4">
+                        <button class="btn btn-primary mr-1">Primary</button>
+                    </div>
+                    <div class="col-lg col-4">
+                        <button class="btn btn-purple mr-1">Purple</button>
+                    </div>
+                    <div class="col-md col-4">
+                        <button class="btn btn-secondary mr-1">Secondary</button>
+                    </div>
+                    <div class="col-md col-4">
+                        <button class="btn btn-info mr-1">Info</button>
+                    </div>
+                    <div class="col-md col-4">
+                        <button class="btn btn-danger mr-1">Danger <span class="badge badge-light badge-pill">!</span></button>
+                    </div>
+                    <div class="col-md col-4">
+                        <button class="btn btn-success mr-1">Success</button>
+                    </div>
+                    <div class="col-md col-4">
+                        <button class="btn btn-warning mr-1">Warning</button>
+                    </div>
+                </div>
+                <div class="row py-2">
+                    <div class="col-md-auto col-4">
+                        <button class="btn btn-sm btn-primary mr-1">Primary</button>
+                    </div>
+                    <div class="col-md-auto col-4">
+                        <button class="btn btn-sm btn-secondary mr-1">Secondary</button>
+                    </div>
+                    <div class="col-md-auto col-4">
+                        <button class="btn btn-sm btn-info mr-1">Info</button>
+                    </div>
+                    <div class="col-md-auto col-4">
+                        <button class="btn btn-sm btn-danger mr-1">Danger</button>
+                    </div>
+                    <div class="col-md-auto col-4">
+                        <button class="btn btn-sm btn-success mr-1">Success</button>
+                    </div>
+                    <div class="col-md-auto col-4">
+                        <button class="btn btn-sm btn-warning mr-1">Warning</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <a href="http://whootstrap.themes.guide/" target="ext">Create a custom Bootstrap 4 theme</a>, and test with this page.
+    <input class="form-control w-50" value="https://themestr.app/">
+    <br>
+</main>
+
+</body>
+</html>

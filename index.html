@@ -5,6 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="./scss/custom.css">
     <link rel="stylesheet" href="./css/arms.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -14,11 +15,12 @@
             crossorigin="anonymous"></script>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./fontawesome/js/all.min.js"></script>
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-arms">
-    <a class="navbar-brand" href="#">ARMS Labs</a>
+<nav class="main-menu navbar navbar-expand-lg navbar-dark bg-arms px-5 py-md-3">
+    <a class="navbar-brand" style="vertical-align: top;" href="#"> <i class="fal fa-cogs fa-2x"></i> ARMS Labs</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,37 +28,79 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto bg-arms">
-            <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" id="research_areas_dropdown" role="button"
-                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Research Areas <span class="sr-only">(current)</span>
+
+            <li class="dropdown menu-large nav-item">
+                <a href="#"
+                   class="dropdown-toggle nav-link"
+                   data-toggle="dropdown">
+                    <i class="fal fa-robot"></i> Research Areas <span class="sr-only">(current)</span>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="research_areas_dropdown">
-                    <a class="dropdown-item" href="#">Area 1</a>
-                    <a class="dropdown-item" href="#">Area 2</a>
-                    <a class="dropdown-item" href="#">Area 3</a>
-                </div>
+                <ul class="dropdown-menu megamenu rounded-0 mt-0">
+                    <div class="row">
+                        <li class="col-md-4 dropdown-item pt-0">
+                            <ul>
+                                <li class="dropdown-header">Robotics</li>
+                                <li>
+                                    <a class="dropdown-item" href="#"><i class="fal fa-robot"></i> Robotics Research Area I</a>
+                                </li>
+                                <li class="disabled">
+                                    <a class="dropdown-item" href="#"><i class="fal fa-robot"></i> Robotics Research Area II</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"><i class="fal fa-robot"></i> Robotics Research Area III</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="col-md-4 dropdown-item">
+                            <ul>
+                                <li class="dropdown-header">Machine Learning</li>
+                                <li>
+                                    <a class="dropdown-item" href="#"> <i class="fal fa-sigma"></i><i class="fal fa-function"></i> : Machine Learning Research Area I</a>
+                                </li>
+                                <li class="disabled">
+                                    <a class="dropdown-item" href="#"> <i class="fal fa-sigma"></i><i class="fal fa-function"></i> : Machine Learning Research Area II</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"> <i class="fal fa-sigma"></i><i class="fal fa-function"></i> : Machine Learning Research Area III
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="col-md-4 dropdown-item pt-0">
+                            <ul>
+                                <li class="dropdown-header">Computer Vision</li>
+                                <li>
+                                    <a class="dropdown-item" href="#"> <i class="fas fa-cctv"></i> : Computer Vision Research Area I</a>
+                                </li>
+                                <li class="disabled">
+                                    <a class="dropdown-item" href="#"> <i class="fas fa-cctv"></i> : Computer Vision Research Area II</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"> <i class="fas fa-cctv"></i> : Computer Vision Research Area III</a>
+                                </li>
+                            </ul>
+                        </li>
+                        </li>
+                    </div>
+                </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Publications</a>
+                <a class="nav-link" href="#">
+                    <i class="fal fa-newspaper"></i> Publications
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">People</a>
-            </li>
-            <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" id="academic_program_dropdown" role="button"
-                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Academic Programs
+                <a class="nav-link" href="#">
+                    <i class="fal fa-users-class"></i> People
                 </a>
-                <div class="dropdown-menu" aria-labelledby="academic_program_dropdown">
-                    <a class="dropdown-item" href="#">Research one </a>
-                    <a class="dropdown-item" href="#">Research two</a>
-                    <a class="dropdown-item" href="#">Research three</a>
-                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Facilities and Equipment</a>
             </li>
+
+
+        </ul>
+        </li>
 
         </ul>
     </div>
@@ -82,7 +126,7 @@
                     class="carousel-item active "
                     style="background-image:  url('./img/1.jpg')"
             >
-                <div class="carousel-caption d-none d-md-block rounded-circle  ">
+                <div class="carousel-caption d-none d-md-block rounded">
                     <h2 class="display-4">News One</h2>
                     <p class="lead">
                         General Secretary of ITU Haolin Zhao Visited Robotics and AI Laboratories..
@@ -150,14 +194,104 @@
 </section>
 
 <section class="latest-publications">
-    <div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </p>
+    <div class="container pt-5">
+        <h4 class=lead"">Latest Publications</h4>
+
+        <!-- Second row of latest publications -->
+        <div class="row">
+            <div class="col-md-4 p-3">
+                <div class="card">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <img class="card-img-top embed-responsive-item" src="./img/lp1.jpg" alt="Card image cap">
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">Energy-Aware Optimal Control of Variable Stiffness Actuated Robots</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-arms">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4  p-3">
+                <div class="card">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <img class="card-img-top embed-responsive-item" src="./img/lp1.jpg" alt="Card image cap">
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">Generalized Dynamics of Stacked Tensegrity Manipulators</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-arms">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4  p-3">
+                <div class="card">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <img class="card-img-top embed-responsive-item" src="./img/lp1.jpg" alt="Card image cap">
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">Computer Vision-Based Pose Estimation of Tensegrity Robots Using Fiducial Markers</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-arms">Download</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Second row of latest publications -->
+        <div class="row">
+            <div class="col-md-4 p-3">
+                <div class="card">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <img class="card-img-top embed-responsive-item" src="./img/lp1.jpg" alt="Card image cap">
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-arms">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4  p-3">
+                <div class="card">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <img class="card-img-top embed-responsive-item" src="./img/lp1.jpg" alt="Card image cap">
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-arms">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4  p-3">
+                <div class="card">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <img class="card-img-top embed-responsive-item" src="./img/lp1.jpg" alt="Card image cap">
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-arms">Download</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
     </div>
 </section>
 

@@ -13,12 +13,13 @@
 #mainPageCarousel .carousel-caption {
     color: white;
     text-align: right;
-    max-width: 50%;
-    left: 0;
+    max-width: 49%;
+    min-width: 30%;
+    left: 50%;
     top: 40%;
     background: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    height: 40%;
+    height: 50%;
 }
 
 #mainPageCarousel .carousel-control-prev,
@@ -34,3 +35,91 @@
     width: 100%;
     max-height: 500px !important;
 }
+/* End Carousel */
+
+/* Latest Publications */
+div.latest-publications
+{
+
+}
+
+div.latest-publications img{
+    height: 200px !important;
+    width: 100%;
+}
+/* End of Latest Publications*/
+
+/* Dropdown menu amendments  */
+
+.menu-large {
+    position: static !important;
+}
+
+.megamenu {
+    padding: 20px 20px;
+    width: 100%;
+}
+
+.megamenu > div > li > ul {
+    padding: 0;
+    margin: 0;
+}
+
+.megamenu > div > li > ul > li {
+    list-style: none;
+}
+
+.megamenu > div > li > ul > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-size: 0.9rem;
+    font-weight: normal;
+    white-space: normal;
+}
+
+.megamenu > div > li > ul > li > a:hover,
+.megamenu > div > li > ul > li > a:focus {
+    text-decoration: none;
+}
+
+.megamenu.disabled > a,
+.megamenu.disabled > a:hover,
+.megamenu.disabled > a:focus {
+
+}
+
+.megamenu.disabled > a:hover,
+.megamenu.disabled > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+    background-image: none;
+    filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
+    cursor: not-allowed;
+}
+
+.megamenu.dropdown-header {
+    font-size: 1.5rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .megamenu {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .megamenu > li {
+        margin-bottom: 30px;
+    }
+    .megamenu > li:last-child {
+        margin-bottom: 0;
+    }
+    .megamenu.dropdown-header {
+        padding: 3px 15px !important;
+    }
+    .navbar-nav .open .dropdown-menu .dropdown-header {
+        color: #fff;
+    }
+}
+/* End Dropdown amendments */
